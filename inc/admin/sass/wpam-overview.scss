@@ -1,0 +1,310 @@
+
+/*
+ *
+ *
+ *
+ *
+ * General
+ *
+ */
+.wpam-admin-page-wrapper{
+    margin-top: 20px;
+    overflow: hidden;
+
+    padding-right: 21px;
+}
+
+.wpam-admin-page-wrapper *,
+.wpam-admin-page-wrapper *:before,
+.wpam-admin-page-wrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wpam-admin-page-section{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+
+.wpam-admin-page-inner{
+    overflow: hidden;
+    /*
+    @media (min-width:800px){
+        float: left;
+        width: 75%;
+    }
+    */
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Header
+ *
+ */
+
+ .wpam-admin-page-header{
+    margin-bottom: 20px;
+}
+
+.wpam-admin-page-header-banner{
+    /* background-color: #1d1d1d; */
+    max-height: 78px;
+    font-size: 0;
+
+    margin-bottom: 20px;
+}
+
+.wpam-admin-page-header-logo{
+    display: inline-block;
+    vertical-align: middle;
+
+    height: auto;
+    /*
+    position: relative;
+    right: -10px;
+    */
+
+    height: 48px;
+    width: auto;
+}
+
+.wpam-admin-page-header-title{
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0!important;
+    height: 0!important;
+}
+
+.wpam-admin-page-header .notice{
+    margin-top: 20px !important;
+}
+
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Section
+ *
+ */
+
+ .wpam-admin-page-section-title{
+    color : #fff;
+    margin : 0;
+    padding: 0 20px;
+    line-height: 48px;
+    background-color: #1d1d1d;
+}
+
+
+.wpam-admin-page-section-content{
+    margin : 0;
+    padding: 0 10px;
+}
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Themes
+ *
+ */
+
+ .wpam-admin-page-section-content-themes{
+    /* font-size: 0; */
+}
+
+.wpam-admin-page-themes-category-title{
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 0;
+}
+
+.wpam-admin-page-themes-list{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wpam-admin-theme{
+    
+    font-size: 16px;
+    padding: 20px;
+    margin: 10px;
+
+    flex-basis: calc( 100% - 20px );
+    @media ( min-width :  600px ){ flex-basis: calc( 50% - 20px ); }
+    @media ( min-width : 1200px ){ flex-basis: calc( 25% - 20px ); }
+    
+    background-color: #F5F5F7;
+    border: 1px solid #eaeaea;
+
+    cursor: pointer;
+    color : #23282d ;
+    text-decoration: none;
+}
+
+
+.wpam-admin-theme-title{
+    margin-top : 0 ;
+}
+
+.wpam-admin-theme-description{}
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * General
+ *
+ */
+
+ .wpam-admin-page-section-general .wpam-admin-page-section-title{
+     display: none;
+ }
+
+ 
+
+
+ .wpam-admin-page-section-content-col{
+
+    float: left;
+
+    &.wpam-admin-col-size-4{
+        width: 33.33333%;
+
+        @media( max-width : 782px ){
+            width: 50%;
+        }
+
+        @media( max-width : 600px ){
+            width: 100%;
+        }
+    }
+
+ }
+
+ .wpam-admin-page-info-list{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.wpam-admin-page-info-col-title{
+    font-size: 16px;
+    padding: 16px 10px;
+    margin: 0;
+}
+
+.wpam-admin-page-section-content-col{}
+
+.wpam-admin-page-info-col-title{}
+
+.wpam-admin-page-info-col-content{
+    overflow: hidden;
+    
+    p, ul{
+        padding : 0 10px;
+    }
+}
+
+
+.wpam-admin-page-info__brand-text{
+    font-size: 14px;
+}
+.wpam-admin-page-info__brand-text__title{
+    /*
+    margin-top: 10px;
+    margin-bottom: 0;
+    */
+}
+
+.wpam-admin-page-info__brand-avatar{
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding : 4px;
+}
+
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Fancybox - override
+ *
+ */
+.fancybox-overlay{
+
+    @media( min-width:783px ){ left: 34px; }
+    @media( min-width:961px ){ left: 160px; }
+    
+}
+
+
+
+
+
+.theme-modal {
+    display: none;
+    
+    width: 100%;
+    max-width: 600px;
+    padding: 0 0 40px 0;
+    text-align: justify;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .theme-modal .fancybox-close-small {
+    top: 7px;
+  }
+  
+  .theme-modal .content-header {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+  
+  .theme-modal .content-scroll {
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+    padding: 40px 20px 0 20px;
+  }
+
+
+
+
+

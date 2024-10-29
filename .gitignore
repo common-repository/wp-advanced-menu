@@ -1,0 +1,11 @@
+# general
+.DS_Store
+.vscode
+
+# node_modules
+!node_modules/
+node_modules/*
+
+# 2 fancybox...
+!node_modules/fancybox/
+!node_modules/@fancyapps/
